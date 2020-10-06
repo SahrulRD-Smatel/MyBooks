@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="assets/css/YOo.css">
+
+  <title>MyBooks | Shop for Books, Art &amp; Collectibles</title>
+
+<!-- Promise and fetch polyfills -->
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.prod.abebookscdn.com/cdn/com/docs/CSS/abe-da85b5ff03.css">
+
+
+<!-- Awal Navbar -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top navbar-light bg-light " >
+  <a class="navbar-brand" href="#"><img src="assets/img/kamusiapa.png" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!-- Akhir Navbar -->
+
+
+
+<!-- site specific includes -->
+
+
+  <link rel="stylesheet" type="text/css" href="https://static.prod.abebookscdn.com/cdn/com/docs/CSS/gateway-14034f7dc2.css">
+
+
+  <style>
+
+
+.grand-feature {
+background-color: #535353;
+
+}
+	  
+	
+.grand-feature-cta .btn.btn-link{
+padding: 8px 8px;
+color:#fff;
+background-color:transparent;
+border-color:#fff;
+}
+
+
+
+	
+.product-list-container .product-list-title{
+font-size: 20px!important;
+text-align: left!important;
+margin-top: 8px!important;
+font-weight: 400!important;
+}
+	
+.gateway .header-feature .header-feature-stripe{
+border-bottom:none;
+	}
+	
+	hr {
+margin: 20px 0 28px 0;
+}
+	.books-tile
+	{
+		font-size: 25px!important;
+		font-weight: 500!important;
+		
+	}
+
+
+	.bold-text{
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+/*Merch Widget*/
+.merch{
+margin-bottom: 10px;
+	}
+
+.merch.tile-wrapper .tile {
+height: inherit;
+  min-height: 275px;
+padding-bottom: 10px!important;
+	}
+	
+.tile-list-feature{
+padding-left: 0px;
+	}
+	
+.product-list-container {
+margin-bottom: 10px!important;
+padding: 0 20px!important;
+	}
+	
+.product-list-title{
+font-size: 20px!important;
+text-align: left!important;
+margin-top: 8px!important;
+font-weight: 400!important;	
+border-bottom: 0px!important;
+	}
+	
+.merc-btn-placement
+{
+position:absolute;
+top:25px; 
+right:25px;
+}
+	
+.wrap-amw-mount
+{
+position:relative
+}
+
+@media screen and (max-width: 480px) {
+
+.merc-btn-placement{
+top:auto;
+right:auto;
+position: relative;
+margin-left: 20px;
+}
+}
+	
+/*Merch Widget ends*/	
+	
+	a.read-more-archive{
+		padding: 6px 20px; z-index: 1000; position:absolute; right: 10px; bottom: 30px; color: #fff;
+	}
+	
+	    @media screen and (max-width: 480px) {
+      a.read-more-archive{
+		padding: 6px 20px; z-index: 1000; position:absolute; right: 7px; bottom: 20px; color: #fff;
+		  
+	}
+
+		
+	}
+	
+	/*About Abe*/
+	
+	.books-tile-about
+	{
+		font-size: 20px!important;
+		font-weight: 500!important;
+		margin-top: 5px!important;
+		
+	}
+	
+	a.about-tile{
+	display: block;
+	margin-top: 5px;
+	}
+	
+.tile-wrapper-about {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    line-height: 22px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px
+	}
+	
+.tile-about{
+    font-size: 13px;
+    height: 250px;
+    overflow: hidden;
+    padding: 0px 20px 20px 20px;
+	text-align: center;
+}
+
+
+.tile-cta-about a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px 10px 10px;
+	display: inline-block;
+	}
+	
+.text-muted-about{
+color: #555555;
+}
+
+@media (max-width: 768px){
+.tile-wrapper-about {
+    margin-left: -7px;
+    margin-right: -7px;
+	max-width: 575px;
+    margin: 10px auto!important;
+	}
+	
+.tile-wrapper-about .tile-content-feature {
+    background:center no-repeat;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 20px;
+    text-align: center;	
+	}
+	
+.tile-about{
+    font-size: 13px;
+    height:auto;
+    overflow: hidden;
+	text-align: center;
+    padding: 0px 30px 20px 30px;
+}
+
+
+
+.about-line{
+	border-bottom: 1px solid #ddd;
+}
+	
+	}
+	
+	/*end About Abe*/
+	
+	
+
+ /* include in the head block and remove include from page when done */
+</style>
+   <!--rotating widget CSS-->
+    <style>
+        .rotating-tile-feature {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            border-radius: 4px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: -20px;
+        }
+
+        .feature-tile-margin {
+            margin-left: -20px;
+            margin-bottom: 10px;
+        }
+
+        .tile-shadow {
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+            border-radius: 4px;
+        }
+
+        .book-title-rotating-widget {
+            font-weight:700;
+            font-size: 22px!important;
+            color:#000000;
+            overflow: hidden;
+            margin-bottom: 11px;
+			text-align: left;
+        }
+
+		/* duplicate class because of rare books overide*/
+		  .rare-books h2 {
+		  
+		  font-size:22px!important;
+		  
+		  }
+
+        .tile-background {
+            background: url(/cdn/com/images/gateway/tiles/backgrounds/slash-tile-bg.png) no-repeat center right;
+            background-size: cover;
+            min-height: 275px;
+            position: relative;
+            background-color:#ffffff;
+        }
+
+        .btn-primary-small {
+            color: #000!important;
+            background-color: #ffffff;
+            border-color: #000000;
+            text-decoration: none;
+            padding: 7px;
+            font-size: 15px;
+            width: 100px;
+        }
+
+        .link-wrapper a {
+        color: #000000;
+        }
+		
+		
+		.rotating-wrapper {
+		margin: 0px -10px;
+		padding: 0 10px;
+		overflow: hidden;
+		}
+
+        .image-rotating-widget {
+            width:100%;
+            height:216px!important;
+            margin-top: 38px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    </style>
+    <!--rotating widget CSS end-->
+
+  <style>
+
+.header-feature-img {background-image: url("https://static.prod.abebookscdn.com/cdn/com/images/gateway/heroes/low-asp-header-new.jpg");
+}
+
+  </style>
+
+      <style>
+	
+/*UI cleanup*/
+#abe-content {
+background-color: #fff!important;
+border-left: 0 solid #ddd!important;
+border-right: 0 solid #ddd!important;
+}
+
+body {
+background: #fff!important;
+}
+
+.tile-wrapper-about {
+box-shadow: 0 0 0 0!important;
+}
+
+.tile-wrapper {
+box-shadow: 0 0 0 0!important;
+}
+
+footer{
+background-color: #efefef!important;
+}
+
+.gateway .header-feature .header-feature-img{
+background-size: auto;
+}
+
+.gateway .header-feature .header-feature-img-inner{
+box-shadow: none;
+}
+	
+	/*strong customer auth*/
+	
+	.sca-headline{
+	font-size: 20px;
+	font-weight: 500;
+	color: #002F36;
+	}
+	/*end strong customer auth*/
+	
+
+	
+ /* include in the head block and remove include from page when done */
+</style>
+<style type="text/css">.bsa {
+  background-color: #fff;
+  display: inline-block;
+  font-size: 80%;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap; }
+  .bsa.bsa-badge {
+    border: 1px solid #aab7b8;
+    border-radius: 10px;
+    padding: 3px 6px; }
+
+.bsa {
+  margin-top: 5px; }
+</style><style type="text/css">/*
+  https://unicode-table.com/en/
+*/
+.simple-product-card {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  .simple-product-card .product-image-container {
+    text-align: center;
+    height: 0;
+    padding-top: 100%;
+    position: relative; }
+  .simple-product-card .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); }
+  .simple-product-card .product-title {
+    margin-top: 8px;
+    color: #333333;
+    word-break: break-word; }
+  .simple-product-card .card-link {
+    text-decoration: none; }
+  .simple-product-card .product-author {
+    margin-top: 2px;
+    word-break: break-word; }
+  .simple-product-card .product-price {
+    margin-top: 2px;
+    color: #29cef7;
+    font-size: 15px; }
+  .simple-product-card .product-shipping {
+    margin-top: 2px; }
+    .simple-product-card .product-shipping .free-shipping {
+      background: url(/cdn/com/images/servlets/shared/search/freeship-icon.gif) no-repeat left center;
+      padding: 3px 0 3px 34px; }
+</style><style type="text/css">.product-image-container {
+  position: relative;
+  text-align: center;
+  line-height: 1.3; }
+</style><style type="text/css">.isbn {
+  white-space: nowrap; }
+
+.isbn + .isbn:before {
+  content: "/";
+  margin: 0 5px; }
+
+@media (max-width: 480px) {
+  .isbn {
+    display: block; }
+  .isbn + .isbn:before {
+    content: "" !important;
+    margin: 0 !important; } }
+</style><style type="text/css">/*
+
+  https://unicode-table.com/en/
+*/
+.product-widget-filmstrip {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto; }
+  .product-widget-filmstrip .simple-product-card {
+    flex: 1 0 20%; }
+  @media (max-width: 768px) {
+    .product-widget-filmstrip .simple-product-card {
+      flex-basis: 40%; } }
+</style><style type="text/css">/*
+
+  https://unicode-table.com/en/
+*/
+.productwidget-tile {
+  margin-bottom: 10px; }
+  .productwidget-tile .tile {
+    height: auto; }
+
+.product-list-container {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 10px; }
+  .product-list-container .product-list-title {
+    color: #222222;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    text-align: center; }
+</style><style type="text/css">/*
+  https://unicode-table.com/en/
+*/
+.manual-widget-mount .product-widget-filmstrip .product-title {
+  color: #003399; }
+  .manual-widget-mount .product-widget-filmstrip .product-title:hover {
+    text-decoration: underline; }
+</style></head>
+<body class="gateway">
+
+
+
+
+
+
+
+  <script>
+    DisplayAmzBanner.init("en");
+  </script>
+<div id="wrapper">
+  <header role="banner" class="locale-com">
+    <div id="abe-header">
+      <div id="main-navigation">
+        <div class="wrapper">
+          <nav class="cf">
+            <button id="mobile-menu" aria-controls="nav-wrapper" aria-expanded="false" type="button">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="toggle-text">Menu</span>
+            </button>
+            <div id="header-searchbox-container-m" class="gnav-searchbox-container-m">
+              <form id="header-searchbox-form-m" method="post" action="/servlet/SearchResults" name="nav-mobile-search">
+                <input type="hidden" id="cm-tag-m" name="cm_sp" value="SearchF-_-topnav-_-Results">
+                <input type="hidden" value="t" name="sts">
+                <fieldset class="gnav-searchbox-m">
+                  <div class="gnav-searchbox-left-m">
+                    
+                    <div class="abeui-autosuggest" data-id="header-searchbox-input-m" data-name="kn" data-replace-id="header-searchbox-input-m" data-cm-id="cm-tag-m" data-cm-default="SearchF-_-topnav-_-Results" data-cm-selected="SearchF-_-TopNavISS-_-Results" data-class-name="gnav-searchbox-input-m" data-placeholder="Search AbeBooks" data-auto-submit="true"><div><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false" class="react-autosuggest__container"><input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="gnav-searchbox-input-m" id="header-searchbox-input-m" name="kn" placeholder="Search MyBooks" value=""><div id="react-autowhatever-1" role="listbox" class="react-autosuggest__suggestions-container"></div></div><button id="header-searchbox-input-m-clear" type="button" class="far fa-times abeui-autosuggest-clear react-autosuggest-clear hidden"><span class="hidden" aria-hidden="true">Clear entry</span></button></div></div>
+                  </div>
+                  <div class="gnav-searchbox-right-m">
+                    <button id="header-searchbox-button-m" class="gnav-searchbox-button-m" type="submit" aria-label="Find"><span>Find</span></button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="nav-bar cf toggle">
+              <div id="nav-wrapper" class="nav-wrapper">
+                  <div id="global-nav-links">
+                      <a id="mobile-menu-account" class="visible-xs-block mobile-nav-bg" href="/servlet/MembersMainMenu?cm_sp=TopNav-_-Home-_-MMM">My Account</a>
+                      <a id="mobile-menu-orders" class="visible-xs-block mobile-nav-bg" href="/my-account/purchases?cm_sp=TopNav-_-Home-_-Orders">My Purchases</a>
+                      <a id="mobile-menu-signon" class="hidden" href="/servlet/SignOff?cm_sp=TopNav-_-Home-_-Login&amp;ph=2">Sign Off</a>
+                      <a class="search-entry" href="/servlet/SearchEntry?cm_sp=TopNav-_-Home-_-Advs" title="Search millions of items for sale">Advanced Search</a>
+                      <a class="collections-link" href="/collections/?cm_sp=TopNav-_-Home-_-Collections" title="Browse books, fine art &amp; collectibles">Browse Collections</a>
+                      <a href="/books/RareBooks/?cm_sp=TopNav-_-Home-_-RBR" title="Find rare &amp; collectible books">Rare Books</a>
+                      <a id="hdr-nbc" href="/collectibles/?cm_sp=TopNav-_-Home-_-NBC" title="Search fine art &amp; collectibles">Art &amp; Collectibles</a>
+                      <a href="/books/Textbooks/?cm_sp=TopNav-_-Home-_-TBC" title="Buy cheap new and used textbooks">Textbooks</a>
+                  </div>
+                  <div id="sub-links" class="sub">
+                      <a id="hdr-sellers" href="/books/Bookstores/?cm_sp=TopNav-_-Home-_-Stores" title="Search AbeBooks sellers from around the world">Sellers</a>
+                      <a id="hdr-sell" href="/books/Sell/?cm_sp=TopNav-_-Home-_-Sell" title="Become a professional AbeBooks seller">Start Selling</a>
+                      <a id="mobile-menu-help" class="visible-xs-block" href="http://help.abebooks.com/?cm_sp=TopNav-_-Home-_-Help">Help</a>
+                      <a id="mobile-menu-close" class="visible-xs-block text-center mobile-close" aria-controls="nav-wrapper" aria-expanded="true" role="button"><span>CLOSE</span></a>
+                  </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      
+      <div class="gnav-searchbox-container">
+        <div class="wrapper">
+          <form id="header-searchbox-form" method="post" action="/servlet/SearchResults" name="quickSearch_B" role="search">
+            <input type="hidden" id="cm-tag" name="cm_sp" value="SearchF-_-topnav-_-Results">
+            <input type="hidden" value="t" name="sts">
+            <input name="ds" value="20" type="hidden">
+            <fieldset class="gnav-searchbox">
+              <div class="gnav-searchbox-left">
+                <div class="gnav-searchbox-field">
+                  
+                  <div class="abeui-autosuggest" data-id="header-searchbox-input" data-name="kn" data-replace-id="header-searchbox-input" data-cm-id="cm-tag" data-cm-default="SearchF-_-topnav-_-Results" data-cm-selected="SearchF-_-TopNavISS-_-Results" data-class-name="gnav-searchbox-input" data-auto-submit="true" data-placeholder="Enter keyword, title, author or ISBN"><div><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false" class="react-autosuggest__container"><input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="gnav-searchbox-input" id="header-searchbox-input" name="kn" placeholder="Enter keyword, title, author or ISBN" value=""><div id="react-autowhatever-1" role="listbox" class="react-autosuggest__suggestions-container"></div></div><button id="header-searchbox-input-clear" type="button" class="far fa-times abeui-autosuggest-clear react-autosuggest-clear hidden"><span class="hidden" aria-hidden="true">Clear entry</span></button></div></div>
+                </div>
+                <div class="gnav-searchbox-right">
+                    <button class="gnav-searchbox-button" id="header-searchbox-button" type="submit"><span>Search</span></button>
+                    <a class="gnav-searchbox-advanced link-cta" id="header-searchbox-advanced" href="/servlet/SearchEntry" onclick="moreSearchOptions('header-search');return false;" title="Search millions of new, used, and rare books">Advanced Search</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      
+
+    </div>
+  </header>
+  <script type="text/javascript" src="https://static.prod.abebookscdn.com/cdn/com/scripts/utilities/global/BasketCount.js?v=1f9151f22b"></script>
+  <div id="abe-content" role="main">
+      
+
+
+<div class="header-feature">
+  <div class="header-feature-img" id="hero-banner">
+    <div class="header-feature-img-inner"></div>
+  </div>
+</div>
+
+<div class="gateway-discover">
+  <div class="container-fluid">
+
+    <div class="gateway-features">
+    
+    <div class="gateway-section">
+
+
+
+
+      <!-- Truly individualized recommendations widget -->
+      <div data-testid="simple-product-card" class="simple-product-card">TRENDING</div><a class="card-link" href="https://komiku.co.id/manga/tensei-shitara-slime-datta-ken/"><div data-testid="product-widget-filmstrip" class="product-widget-filmstrip"><div class="product-image-container"><img class="product-image" alt="" src="https://vignette.wikia.nocookie.net/tensei-shitara-slime-datta-ken/images/b/b0/Manga_Volume_15_Special.jpg/revision/latest?cb=20200703101212"></div></div></div>
+
+
+
+
+
+
+<!--"rotating widget">-->
+
+<div class="rotating-wrapper">
+<div class="col-sm-6 col-xs-12 ">
+	<div class="tile tile-staff-feature tile-right tile-inverted feature-tile-margin tile-shadow" style="background-image: url(&quot;https://spasialkan.com/wp-content/uploads/2016/05/Background-Buku.jpg&quot;); cursor: pointer;">
+		<div class="tile-body">
+			<h2 class="books-tile">
+				<a href="https://play.google.com/store/books" title="Shop Books">A Book Lover's Dream</a>
+			</h2>
+		</div>
+		<div class="tile-cta">
+			<a href="https://play.google.com/store/books" title="Shop Books">Shop Books</a>
+		</div>
+	</div>
+</div>
+
+<div class=" col-sm-6 col-xs-12">
+    <div class="tile tile-right tile-background rotating-tile-feature" style="cursor: pointer;">
+    <div class="rotating-tile-info col-xs-6">
+        <small class="pre-heading">Must read</small>
+        <div class="link-wrapper">
+                  <h2><a class="book-title-rotating-widget link-rotating-widget" href="https://www.wattpad.com/home">Hidden Truth</a></h2>
+        </div>
+        <p class="author-title-rotating-widget">Secret</p>
+        <a class="btn btn-primary-small">Shop now</a>
+    </div>
+    <div class="col-xs-6 image-container">
+        <div class="image-rotating-widget" style="background-image: url(&quot;https://a.wattpad.com/cover/81742530-176-k940153.jpg&quot;);">
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+      
+    <div class="merch tile-wrapper">
+	<div class="tile tile-list-feature wrap-amw-mount">
+    <div class="tile-body">
+    <div class="amw-mount" data-title="Recommended for you" data-layout="filmstrip"><div data-testid="product-widget" class="product-list-container"><h2 data-testid="product-widget-title" class="product-list-title">Recommended for you</h2><div data-testid="product-widget-filmstrip" class="product-widget-filmstrip"><div data-testid="simple-product-card" class="simple-product-card"><a class="card-link" href="https://komiku.co.id/manga/the-beginning-after-the-end/"><div class="product-image-container"><img class="product-image" alt="" src="https://d30womf5coomej.cloudfront.net/sa/fb/432a6ed6-a26b-41f1-a3d9-80a0c86e9e95_z.jpg"></div><div data-testid="card-title" class="product-title">The Beginning After The End</div></a><div data-testid="card-price" class="product-price">$2.59</div></div><div data-testid="simple-product-card" class="simple-product-card"><a class="card-link" href="https://kakaopage.co.id/content/The-Villainess-Reverses-Hourglass/3340"><div class="product-image-container"><img class="product-image" alt="" src="https://cdn.novelupdates.com/images/2019/06/VillainessReversestheHourglass7.jpg"></div><div data-testid="card-title" class="product-title">The Villainess Reverses Hourglass</div></a><div data-testid="card-price" class="product-price">$3.00</div></div><div data-testid="simple-product-card" class="simple-product-card"><a class="card-link" href="https://www.wattpad.com/924822242-rewinds-%E2%9C%93-catatan-fai"><div class="product-image-container"><img class="product-image" alt="" src="https://a.wattpad.com/cover/151154077-352-k394728.jpg"></div><div data-testid="card-title" class="product-title">Rewinds</div></a><div data-testid="card-price" class="product-price">$5.96</div></div><div data-testid="simple-product-card" class="simple-product-card"><a class="card-link" href="https://www.webtoons.com/id/fantasy/tower-of-god/list?title_no=749"><div class="product-image-container"><img class="product-image" alt="" src="https://i.redd.it/g3s0y1500em31.jpg"></div><div data-testid="card-title" class="product-title">Tower Of God</div></a><div data-testid="card-price" class="product-price">$2.99</div></div></div></div></div>
+	<a class="btn btn-default btn-sm merc-btn-placement" href="">See more</a><br>
+	</div>
+	</div>
+	</div>   
+         
+          
+          
+
+
+      
+    </div>
+  </div>
+
+
+</div>
+
+<!--"rotating widget end">--> 
+    
+
+ 
+<div style="position:relative"><a href="#" class="read-more-archive">Read more articles</a>
+
+   <div class="grand-feature" style="background-image: url(&quot;https://static.prod.abebookscdn.com/cdn/com/images/gateway/tiles/backgrounds/gf-epic-books.jpg&quot;); cursor: pointer;"></div>
+    <div class="grand-feature-body">
+
+      <h2><a href="#" title="The best epic books">
+	The best epic books</a></h2>
+    <p>We didn't fuss too much over the physical length of the books, but we did seriously consider the weight of the story itself. Will the reader come out the other side feeling as though they've lived a hundred lives? These 20 epic books all shout a resounding yes. Time to settle in and enjoy the read.</p>
+
+      <div class="grand-feature-cta">
+      
+        <a href="#" class="btn btn-link bold-text" title="The best epic books">See the books</a>
+   
+    
+		</div>
+
+      
+    </div>
+  </div>
+ </div>
+
+
+
+
+      
+             <div class="tile-wrapper-about"> 
+        
+            <div class="col-sm-4">
+			<div class="tile-about about-line">
+              <div class="tile-body">
+               <img src="https://static.prod.abebookscdn.com/cdn/com/images/gateway/tiles/backgrounds/indep-sellers.jpg">
+                <h2 class="books-tile-about">Independent sellers</h2>
+             <div class="text-muted-about sub-heading">Millions of books and other items are listed for sale on AbeBooks by trusted sellers from around the world.</div>
+              </div>
+              <div class="tile-cta-about">
+                <a href="/books/features/beautiful-bookshops.shtml?cm_sp=merch-_-about-_-booksellers">Meet some of our sellers</a>
+              </div>
+            </div>
+          </div>
+          
+           
+            <div class="col-sm-4">
+			<div class="tile-about about-line">
+              <div class="tile-body">
+              <img src="https://static.prod.abebookscdn.com/cdn/com/images/gateway/tiles/backgrounds/not-just-books.jpg">
+             <h2 class="books-tile-about">Not just books</h2>
+             <div class="text-muted-about sub-heading">We're known for our epic selection of new, used, and rare books, but we also sell fine art &amp; collectibles.</div>
+              </div>
+              <div class="tile-cta-about">
+                <a href="/collectibles/?cm_sp=merch-_-about-_-coll">Browse art &amp; collectibles</a>
+              </div>
+            </div>
+          </div>
+          
+           
+            <div class="col-sm-4">
+			<div class="tile-about">
+              <div class="tile-body">
+               <img src="https://static.prod.abebookscdn.com/cdn/com/images/gateway/tiles/backgrounds/trusted.jpg">
+                <h2 class="books-tile-about">Feel the love</h2>
+             <div class="text-muted-about sub-heading">We asked customers to tell us why they love shopping on AbeBooks and we were overwhelmed by their kind words.</div>
+              </div>
+              <div class="tile-cta-about">
+                <a href="/about/customer-stories/?cm_sp=merch-_-about-_-stories">Read the customer stories</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+    
+
+
+<form id="header-searchbox-form" method="post" action="/servlet/SearchResults" name="quickSearch_B" role="search">
+            <input type="hidden" id="cm-tag" name="cm_sp" value="SearchF-_-topnav-_-Results">
+            <input type="hidden" value="t" name="sts">
+            <input name="ds" value="20" type="hidden">
+            <fieldset class="gnav-searchbox">
+              <div class="gnav-searchbox-left">
+                <div class="gnav-searchbox-field">
+                  
+                  <div class="abeui-autosuggest" data-id="header-searchbox-input" data-name="kn" data-replace-id="header-searchbox-input" data-cm-id="cm-tag" data-cm-default="SearchF-_-topnav-_-Results" data-cm-selected="SearchF-_-TopNavISS-_-Results" data-class-name="gnav-searchbox-input" data-auto-submit="true" data-placeholder="Enter keyword, title, author or ISBN"><div><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false" class="react-autosuggest__container"><div id="react-autowhatever-1" role="listbox" class="react-autosuggest__suggestions-container"></div></div><button id="header-searchbox-input-clear" type="button" class="far fa-times abeui-autosuggest-clear react-autosuggest-clear hidden"><span class="hidden" aria-hidden="true">Clear entry</span></button></div></div>
+                </div>
+                <div class="gnav-searchbox-right">
+
+                </div>
+              </div>
+            </fieldset>
+          </form>
+    </div>
+
+<div class="gateway-social-block">
+  <div class="gateway-social-body">
+    <h2 class="dtlb-a">Web App Developers</h2>
+    <ul>
+      <li><a href="https://twitter.com/home" class="gateway-twitter">Twitter</a></li>
+      <li><a href="https://web.facebook.com/home.php?_rdc=1&_rdr" class="gateway-facebook">Facebook</a></li>
+      <li><a href="https://www.instagram.com/_zethya_sahrul_/" class="gateway-instagram">Instagram</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<br>
+
+<div id="mobileBanner" style="display:none">
+  <b id="mobile-view">Mobile View:</b>
+  <a id="mv-on" class="r-toggle" href="/" onclick="ResponsiveHelper.restoreMobileView();return false;">Available</a>
+  <span id="mv-none">Not Available</span>
+  <button id="dismiss-toggle" onclick="ResponsiveHelper.dismissToggle();return false;" type="button" class="close right" aria-hidden="true">×</button>
+</div>
+
+</div><!-- end:content-pane -->
+</div><!-- end:wrapper -->
+<footer>
+    </div> <!-- End Site Links -->
+
+    <div id="footer-legal" class="legal" role="contentinfo">
+      <tr>
+        <td width="1000px">
+          <font face="Copyright Violations" size="3" align="center" color="black"><center>Copyright ©2020 ~ Sahrul Ramadhani All Rights Reserved</font></center>
+        </td>
+      </tr>
+    </div>
+  </div>
+</footer>
+
+
+</div><iframe src="https://a11362785697.cdn.optimizely.com/client_storage/a11362785697.html" hidden="" tabindex="-1" title="Optimizely Internal Frame" height="0" width="0" style="display: none;"></iframe><iframe src="javascript:false;ts=1601433633866" name="pixels" style="width: 0px; height: 0px; border: 0px;"></iframe><div id="notifications"><div id="this2" class="not-container level-info"><div class="msg-body"><p>Delivery times may be longer than normal in your area. <a href="https://help.abebooks.com/covid-19-frequently-asked-questions/">Learn more</a></p><p><a class="dismiss">Dismiss notification</a></p></div></div></div></body></html>

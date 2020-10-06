@@ -1,0 +1,33 @@
+  
+*{
+	box-sizing: content-box;
+}
+body {
+	margin-bottom: 120px;
+	margin-top: 4px;
+}
+/* navbar */
+nav {
+	width: 100%;
+}
+section {
+	min-height: 100px;
+}
+.jumbotron {
+	height: 100px;
+}
+.logo {
+	position: relative;
+	left: 40px;
+}
+.navigasi {
+	font-size: 17px;
+	position: relative;
+	font-family: "Inter";
+	left: 600px;
+	top: 0px;
+	padding: 20px;
+	text-decoration: none;
+
+    color: black;
+}
